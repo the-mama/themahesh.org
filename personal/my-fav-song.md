@@ -4,7 +4,7 @@ date: "2026-10-31"
 category: "Song"
 author: "The Mahesh"
 excerpt: "ఎప్పుడూ ఒప్పుకోవద్దురా ఓటమి"
-tags: "Telugu, Work"
+tags: "Telugu"
 --- 
 
 ఎప్పుడూ ఒప్పుకోవద్దురా ఓటమి
