@@ -1,5 +1,5 @@
 ---
-title: "My favourite song - written by Sirivennela Sitharama Shastri"
+title: "My favourite song - written by Sirivennela Garu"
 date: "2026-10-31"
 category: "Song"
 author: "The Mahesh"
