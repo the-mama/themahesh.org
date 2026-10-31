@@ -1,7 +1,11 @@
-Sarvai Papanna Goud: The Apar Shivaji of Telangana and a Defender of Hindu Dharma
-
-By Mahesh G
-
+---
+title: "The Apar Shivaji of Telangana and a Defender of Hindu Dharma"
+date: "2026-10-31"
+category: "History"
+author: "The Mahesh"
+excerpt: "History remembers kings who inherited kingdoms."
+tags: "English"
+--- 
 History remembers kings who inherited kingdoms. It remembers emperors who commanded enormous armies and rulers who built monuments that survived for centuries. But occasionally, history produces a different kind of hero—a man who begins with almost nothing, rises from among ordinary people, challenges established power and leaves behind a legacy that refuses to disappear.
 
 Sarvai Papanna Goud was such a man.
