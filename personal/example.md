@@ -23,12 +23,12 @@ To create a new personal blog post, edit only these locations:
 
 **1. Create the post file**
 
-Copy `TEMPLATE.md` and create a new Markdown file inside `blogs`.
+Copy `TEMPLATE.md` and create a new Markdown file inside `personal`.
 
 Use a URL-friendly filename, for example:
 
 ```text
-personal/blogs/my-first-personal-story.md
+personal/my-first-personal-story.md
 ```
 
 At the top, update the frontmatter:
@@ -57,14 +57,14 @@ More writing...
 
 **2. Add the post to the manifest**
 
-Edit `manifest.json` and add the new path inside `"posts"`:
+Edit `personal/manifest.json` and add the new path inside `"posts"`:
 
 ```json
 {
   "category": "Personal",
   "posts": [
-    "personal/blogs/my-first-personal-story.md",
-    "personal/blogs/movies-i-have-watched.md"
+    "personal/my-first-personal-story.md",
+    "personal/movies-i-have-watched.md"
   ]
 }
 ```
@@ -73,10 +73,10 @@ The website sorts posts by `date`, so newer dates appear first.
 
 **3. Add images, if needed**
 
-Place images in `images`, then reference them in the Markdown:
+Place images in `personal/images`, then reference them in the Markdown:
 
 ```markdown
-![Description of image](personal/blogs/images/my-image.jpg)
+![Description of image](personal/images/my-image.jpg)
 ```
 
 **4. Preview and publish**
@@ -96,7 +96,7 @@ http://localhost:8000/personal.html
 Then publish:
 
 ```bash
-git add personal/blogs
+git add personal
 git commit -m "Add personal blog post"
 git push origin main
 ```

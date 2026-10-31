@@ -1,0 +1,20 @@
+{
+  "category": "Personal",
+  "popular": [
+    "personal/books-i-have-read.md",
+    "personal/meditation-problem-solving.md",
+    "personal/movies-i-have-watched.md",
+    "personal/telugu-politics-beyond-headlines.md",
+    "personal/bhargavarama.md"
+  ],
+  "posts": [
+    "personal/movies-i-have-watched.md",
+    "personal/books-i-have-read.md",
+    "personal/telugu-politics-beyond-headlines.md",
+    "personal/ai-yugam-telugu.md",
+    "personal/how-to-build-reading-habit-telugu.md",
+    "personal/meditation-problem-solving.md",
+    "personal/example.md",
+    "personal/my-fav-song.md"
+  ]
+}
