@@ -658,10 +658,24 @@ body.nav-open .nav-drawer {
   content: "";
 }
 
+.calendar-day.today::before {
+  position: absolute;
+  inset: 2px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
 .calendar-day.has-post:hover,
 .calendar-day.has-post[aria-pressed="true"] {
   color: #fff;
   background: var(--accent);
+}
+
+.calendar-day.today.has-post:hover::before,
+.calendar-day.today.has-post[aria-pressed="true"]::before {
+  border-color: #fff;
 }
 
 .calendar-day.has-post:hover::after,

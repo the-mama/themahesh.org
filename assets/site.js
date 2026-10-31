@@ -183,6 +183,7 @@
       const calendarClear = document.getElementById("calendarClear");
       let selectedDate = "";
       const today = new Date();
+      const todayString = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
       let calendarDate = new Date(today.getFullYear(), today.getMonth(), 1);
 
       function renderCalendar() {
@@ -201,7 +202,12 @@
           const day = index + 1;
           const date = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
           const hasPost = postDates.has(date);
-          return `<button class="calendar-day${hasPost ? " has-post" : ""}" type="button" data-calendar-date="${date}" aria-label="${date}${hasPost ? ", posts published" : ""}" aria-pressed="${selectedDate === date}"${hasPost ? "" : " disabled"}>${day}</button>`;
+          const isToday = date === todayString;
+          const classes = ["calendar-day"];
+          if (hasPost) classes.push("has-post");
+          if (isToday) classes.push("today");
+          const label = [date, isToday && "today", hasPost && "posts published"].filter(Boolean).join(", ");
+          return `<button class="${classes.join(" ")}" type="button" data-calendar-date="${date}" aria-label="${label}"${isToday ? ' aria-current="date"' : ""} aria-pressed="${selectedDate === date}"${hasPost ? "" : " disabled"}>${day}</button>`;
         }).join("");
         calendarGrid.innerHTML = weekdayLabels + blanks + dayButtons;
         if (calendarClear) calendarClear.hidden = !selectedDate;
