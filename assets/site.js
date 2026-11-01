@@ -268,10 +268,10 @@
           .map((post, index) => {
             const tags = tagsFor(post);
             const fallbackImages = [
-              "assets/images/blog-books.jpg",
-              "assets/images/blog-movies.jpg",
-              "assets/images/blog-meditation.jpg",
-              "assets/images/blog-journal.jpg"
+              "assets/images/blog-books.webp",
+              "assets/images/blog-movies.webp",
+              "assets/images/blog-meditation.webp",
+              "assets/images/blog-journal.webp"
             ];
             const image = post.image || fallbackImages[(start + index) % fallbackImages.length];
             const tagHtml = tags
